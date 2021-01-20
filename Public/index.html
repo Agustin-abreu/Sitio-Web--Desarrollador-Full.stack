@@ -5,15 +5,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Favicons -->
+    <link href="images/logo-dark.png" rel="icon">  
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
-    <title>Hello, world!</title>
+    <title>ClaveDesign</title>
 </head>
 
 <body>
@@ -130,7 +132,7 @@
                     <div class="plans plan-light">
                         <h3>Página/App Web</h3>
                         <hr>
-                        <h2>$7500<span> / por proyecto</span></h2>
+                        <h2>$12000<span><br> / por proyecto</span></h2>
                         <h4>Front-End y Back-End</h4>
                         <hr>
                         <ul class="topmargin-sm">
@@ -150,7 +152,7 @@
                     <div class="plans plan-dark">
                         <h3>Aplicación Movil</h3>
                         <hr>
-                        <h2>$9500<span> / por proyecto</span></h2>
+                        <h2>$30000<span>  <br>/ por proyecto</span></h2>
                         <h4>Front-End y Back-End</h4>
                         <hr>
                         <ul class="topmargin-sm">
@@ -184,9 +186,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-container">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis eveniet cupiditate sint,
-                                reiciendis id aliquid harum suscipit, vel tempora eos ducimus omnis unde, minima iusto
-                                voluptatem reprehenderit sit saepe laboriosam voluptate magnam voluptatum eius beatae.
+                            <p>Muy muy contento con el trabajo Realizado. Satisfacción cumplida. Puede decir que es una excelente persona, responsable y de mucha paciencia. 100% Recomendado sus servicios.
                             </p>
                             <div class="rating">
                                 <ul class="list-inline">
@@ -222,8 +222,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-container">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore cum assumenda possimus.
-                                Voluptas, cumque beatae?</p>
+                            <p>Muy buen servicio, excelente predisposición para trabajar, asesorar y adaptarse a lo que le pedía. Súper recomendable!</p>
                             <div class="rating">
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
@@ -259,10 +258,7 @@
 
                     <div class="carousel-item">
                         <div class="carousel-container">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis, odio id magni
-                                adipisci quas neque totam, asperiores assumenda error rem vitae quisquam non ab
-                                aspernatur tenetur quia quidem voluptas quis repellendus quae suscipit? Repudiandae
-                                commodi recusandae ut molestiae dolores veritatis quis id nobis eveniet.</p>
+                            <p>Excelente servicio , gran nivel de creatividad, velocidad de respuesta, asesoramiento profesional y lo mas importante la capacidad de escucha activa al cliente logrando captar que es lo que el mismo desea.</p>
                             <div class="rating">
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
@@ -314,37 +310,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 topmargin-sm" >
-                    <h3>Listo para comenzar tu proyecto?<b>solo avísanos</b></h3>
+                    <h3>¿Listo para comenzar tu proyecto?<b> Solo avísanos</b></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea consequuntur, odit veniam mollitia aliquam reiciendis dignissimos, vitae sapiente neque, cum dolorum. contact@ClaveDesign.com</p>
                 </div>
-                <div class="col-md-6 topmargin-sm">
+                <form class="col-md-6 topmargin-sm" action="./main.php" method="POST">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="" placeholder="Nombre">
+                                <input type="text" class="form-control" id="Nombre" required >
+                                <label>Nombre</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="" placeholder="Apellido">
+                                <input type="text" class="form-control" id="Apellido" required >
+                                <label>Apellido</label>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <form class="form-group">
-                                <input type="email" class="form-control" id="" placeholder="E-mail">
+                                <input type="Text" class="form-control" id="Asunto" required>
+                                <label>Asunto</label>
                             </form>  
                         </div>
                         <div class="col-md-12">
                             <form class="form-group">
-                                <input type="number" class="form-control" id="" placeholder="Número de celular (opcional)">
+                                <input type="text" class="form-control" id="Mensaje" required >
+                                <label>Mensaje</label>
                             </form>  
                         </div>
                         <div class="col-md-12">
-                            <a href="#" class="btn btn-dark btn-block">Enviar Contacto</a>
+                            <input type="submit"class="btn btn-dark btn-block" value="Enviar" onclick="return enviarFormulario()"><input/>  
                         </div>
                     </div>
                     
-                </div>
+                </form>
             </div>
 
         </div>
@@ -363,13 +363,11 @@
             <li class="list-inline-item footer-menu"><a href="#contacto">Contacto</a></li>
         </ul>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li class="list-inline-item"><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li class="list-inline-item"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li class="list-inline-item"><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-            <li class="list-inline-item"><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/clave_design_it/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li class="list-inline-item"><a href="https://github.com/AgustinClavero"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/agustin-clavero-981915178/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
         </ul>
-        <small>©2020ClaveDesign All Rights Reserved</small>
+        <small>©2021 ClaveDesign All Rights Reserved</small>
 
        </div>
    </section> 
@@ -385,6 +383,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    
+    <script src="/Sitio-Web--Desarrollador-Full.stack/Public/main.js"></script>
 </body>
 
 </html>
