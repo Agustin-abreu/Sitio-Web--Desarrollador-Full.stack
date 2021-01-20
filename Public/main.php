@@ -7,8 +7,8 @@ $Mensaje = $_POST['Mensaje'];
 
 
 
-$header = "Este mensaje fue enviado por " ;
-$mensajeCompleto = $mensaje .  "\nAtentamente " . $Nombre
+$header = "Este mensaje fue enviado por";
+$mensajeCompleto = $mensaje .  "\nAtentamente: " . $Nombre
 
 
 mail($Destinatario, $Asunto, $mensajeCompleto, $header);
