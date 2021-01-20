@@ -12,7 +12,3 @@ $mensajeCompleto = $mensaje .  "\nAtentamente: " . $Nombre
 
 
 mail($Destinatario, $Asunto, $mensajeCompleto, $header);
-echo "<script>alert('correo enviado exitosamente')</script>";
-echo "<script> setTimeout(\"location.href='index.html'\",1000)</script>";
-
-?>
