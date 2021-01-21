@@ -5,7 +5,7 @@ Un pagina Web informativa sobre un Developer Full-stack
 
 ## Despliegue 📦
 
-El deploy se hizo en el hosting https://app.netlify.com/
+El deploy se hizo en el hosting https://clavedesign.netlify.app/
 
 ## Construido con 🛠️
 
