@@ -1,8 +1,7 @@
 # Sitio-Web--Desarrollador-Full.stack
 
-# Título del Proyecto
 
-Un pagina Web informativa sobre un Developer
+Un pagina Web informativa sobre un Developer Full-stack
 
 ## Despliegue 📦
 
